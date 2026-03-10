@@ -1,8 +1,8 @@
-import os
+import streamlit as st
 
-MONDAY_API_TOKEN = os.getenv("MONDAY_API_TOKEN")
+MONDAY_API_TOKEN = st.secrets["MONDAY_API_TOKEN"]
 
 DEALS_BOARD_ID = 5027065873
 WORK_ORDERS_BOARD_ID = 5027065923
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
